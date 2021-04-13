@@ -24,10 +24,6 @@ window.onload = function() {
   var time = when[this.Math.floor(Math.random() * when.length)];
 
   var theExcuse = animal + verb + thing + time;
-  console.log(theExcuse);
 
-  function changeExcuse() {
-    // window.location.reload();
-    document.getElementById("btn").innerHTML = `${theExcuse}`;
-  }
+  var pExcuse = (document.getElementById("excuse").innerText = `${theExcuse}`);
 };
