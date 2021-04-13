@@ -26,4 +26,8 @@ window.onload = function() {
   var theExcuse = animal + verb + thing + time;
 
   var pExcuse = (document.getElementById("excuse").innerText = `${theExcuse}`);
+
+  //   function refreshPage() {
+  //     window.location.reload();
+  //   }
 };
