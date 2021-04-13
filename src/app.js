@@ -7,5 +7,27 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Maikel from the console!");
+  var who = ["The dog ", "My lion ", "His turtle ", "My bird ", "My wife "];
+  var action = ["ate ", "peed ", "crushed ", "broke ", "Turned off "];
+  var what = ["my homework ", "the keys ", "the car ", "My computer "];
+  var when = [
+    "before the class",
+    "right on time",
+    "when I finished",
+    "during my lunch",
+    "while I was praying",
+    "In the middle of a game"
+  ];
+  var animal = who[this.Math.floor(Math.random() * who.length)];
+  var verb = action[this.Math.floor(Math.random() * action.length)];
+  var thing = what[this.Math.floor(Math.random() * what.length)];
+  var time = when[this.Math.floor(Math.random() * when.length)];
+
+  var theExcuse = animal + verb + thing + time;
+  console.log(theExcuse);
+
+  function changeExcuse() {
+    // window.location.reload();
+    document.getElementById("btn").innerHTML = `${theExcuse}`;
+  }
 };
